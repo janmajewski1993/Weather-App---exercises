@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WeatherApp</title>
+		<script
+			src="https://kit.fontawesome.com/eeec7a3436.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="app">
+			<h1 class="app__header">weather app</h1>
+			<hr />
+			<button aria-label="dark-style switch" class="app__style">
+				<div class="app__style-icons">
+					<i class="fas fa-moon"></i>
+					<i class="fas fa-sun"></i>
+					<div class="app__style-icons-switch dark-switch"></div>
+				</div>
+			</button>
+			<div class="app__content">
+				<div class="app__content-city">
+					<h3 class="city-name"></h3>
+					<input
+						class="city-input"
+						type="text"
+						placeholder="Write the name of the city... "
+					/>
+					<button class="city-submit">Submit</button>
+					<p class="city-error"></p>
+				</div>
+				<div class="app__content-img">
+					<img src="" alt="A photo that shows the weather" class="img" />
+					<h3 class="weather"></h3>
+				</div>
+			</div>
+			<div class="app__sections">
+				<div class="app__sections-headings">
+					<p>Time:</p>
+					<p>Temperature:</p>
+					<p>Humidity:</p>
+					<p>Wind:</p>
+				</div>
+				<div class="app__sections-infos">
+					<p class="time"></p>
+					<p class="temperature"></p>
+					<p class="humidity"></p>
+					<p class="wind"></p>
+				</div>
+			</div>
+		</div>
+		<script src="./scripts/scripts.js"></script>
+	</body>
+</html>
